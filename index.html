@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<head>
+<title>Select Symbology</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+</head>
+<body>
+ <div id="inputForm">
+ 	Enter Text:&nbsp;<input type="text" id="textBarcode" tabindex=1/>
+ 	&nbsp;Height:&nbsp;<input type="text" id="textHeight" size="2" maxlength="3" tabindex=2/>
+ 	&nbsp;Width:&nbsp;<input type="text" id="textWidth" size="2" maxlength="3" tabindex=3/>
+ 	&nbsp;Symbology:&nbsp;
+ 	<select id="selList">
+ 		<option value="Code39" selected>Code 39</option>
+ 		<option value="Int2of5">Interleaved 2 of 5</option>
+ 		<option value="Code128B">Code 128B</option>
+ 		<option value="UPC">UPC</option>
+ 	</select>&nbsp;
+ 	<input type="button" id="btnGenBar" value="Generate Barcode" tabindex=4/>
+ </div>
+ <p></p>
+ <div id="result"></div>
+ <p></p>
+ <textarea rows="30" cols="110" id="textImages" tabindex=0></textarea>
+<script type="text/javascript" src="./barcode_sample.js"></script>
+</body>
+</html>
