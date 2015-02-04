@@ -106,11 +106,9 @@ function funcCode39() { // Code 39
 } // End Code 39
 
 function funcInt2of5() { // Interleaved 2 of 5
- alert(strText);
  if (strText.length % 2) {
 	strText = '0' + strText;
  }
- alert(strText);
  strRaw = "1010";
  for (var i = 0; i < strText.length / 2; i++) {
 	 intEven = parseInt(strText.substr(i * 2, 1), 10);
@@ -123,7 +121,6 @@ function funcInt2of5() { // Interleaved 2 of 5
 	 }
  }
  strRaw += "11101";
- alert(strRaw);
 } // End Interleaved 2 of 5
 
 function funcCode128B() { // Code 128B
